@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,
+width=device-width height=device-height">
+    <title>投票页面</title>
+    <link rel="stylesheet" href="inspectionProfiles/bootstrap.min.css">
+    <script src="inspectionProfiles/jquery.min.js"></script>
+    <script src="inspectionProfiles/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+    <header>
+        <!--header with more2btn closebtn-->
+        <button class="more2" value="more2">
+            <img src="images/more2-btn.png"/>
+        </button>
+        <div class="title">
+            投票
+        </div>
+        <button class="clo" value="clo">
+            <img src="images/close-btn.png"/>
+        </button>
+    </header>
+    <main>
+        <!--a headline ,a tips and players-boxes with hover-->
+        <div class="headline">
+
+            <p class="disguess">
+                发言讨论结束，大家请投票
+            </p>
+            <button class="play" value="play" onclick="play();">
+                <img src="images/vedio-btn.png"/>
+            </button>
+            <audio id="player" src="NO.9.mp3" controls="controls" hidden preload>
+                您的浏览器不支持audio标签
+            </audio>
+            <script type="text/javascript">
+                function play() {
+                    var player = document.getElementById("player");
+                    if(player.pause)
+                    /**
+                     * 如果player的pause属性是true，也就是说player停止了播放
+                     * 执行播放
+                     */
+                    {
+                        player.play();
+                    }
+                    if(!player.pause){
+                        player.pause();
+                    }
+                }
+            </script>
+        </div>
+        <div class="little-triangle">
+            <img class="lt" src="images/little-triangle.png"/>
+        </div>
+        <div class="tips">
+            点击得票数最多人的头像
+        </div>
+        <div class="players">
+            <!--3 boxes in a line-->
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">水民</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">1号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">水民</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">2号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">警察</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">3号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">法官</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">4号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">狙击手</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">5号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">医生</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">6号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">杀手</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">7号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">水民</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">8号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">水民</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">9号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">卧底</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">10号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case">预言家</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case">11号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <!--vote button center,half visible-->
+        <button class="vote">投死</button>
+    </footer>
+</body>
+</html>

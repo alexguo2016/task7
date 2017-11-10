@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>audioDemo</title>
+</head>
+
+<body>
+    <audio id="player" src="NO.9.mp3" controls="controls" hidden preload>
+        您的浏览器不支持audio标签
+    </audio>
+    <button onclick="play();">播放</button>
+    <button onclick="stop();">停止</button>
+    <script type="text/javascript">
+        function play() {
+            var player = document.getElementById("player");
+            if(player.pause)
+            /**
+             * 如果player的pause属性是true，也就是说player停止了播放
+             * 执行播放
+             */
+            {
+                player.play();
+            }
+            else if(player.play){
+                player.pause();
+            }
+        }
+        function stop() {
+            var player = document.getElementById("player");
+            if(player.play)
+            {
+                player.pause();
+            }
+        }
+    </script>
+</body>
+</html>
