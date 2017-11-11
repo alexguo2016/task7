@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>opacityDemo</title>
+    <style type="text/css">
+        .parent{
+            width:10rem;
+            height:10rem;
+            opacity: 0.5;
+        }
+        .child{
+            width:5rem;
+            height: 5rem;
+            background-color:red;
+            opacity: 0.8;
+        }
+        .no-change{
+            width:5rem;
+            height: 5rem;
+            background-color:red;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+<!--现在先试试设置父元素的opacity，子元素不动-->
+<div class="parent">
+    <div class="child">
+
+    </div>
+</div>
+<div class="no-change">
+    我是参照物
+</div>
+</body>
+</html>

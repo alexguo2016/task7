@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rgbaDemo</title>
+    <style type="text/css">
+        div{
+            display:inline-block;
+            margin:5rem;
+            width:10rem;
+            height:10rem;
+            color:blue;
+            font-size: 3rem;
+            background-color: rgba(104,50,80,0.5);
+        }
+        .refer{
+            background-color: rgb(104,50,80);
+        }
+        .child{
+            background-color: rgba(104,50,80,0.5);
+        }
+
+    </style>
+</head>
+<body>
+<!--测试rgba的使用，然后这个是不是子元素也继承的呢？-->
+<div class="refer">
+    这个用来对照
+</div>
+<div class="test">
+    这是一个测试
+</div>
+<div class="parent">
+    父元素
+    <div class="child">
+        子元素
+    </div>
+</div>
+</body>
+</html>
