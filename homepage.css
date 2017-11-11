@@ -79,7 +79,8 @@ button{
 .cols{
     font-size:3.5rem;
     text-align: center;
-    margin:3rem 6rem;
+    margin:3rem 10%;
+    width:80%;
 }
 .right-arrow{
     position:absolute;
