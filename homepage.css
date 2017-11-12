@@ -64,6 +64,7 @@ cont format
 .cont{
     padding: 10vw 0 0 6vw;
     bottom:0;
+
 }
 .head{
     height:auto;
@@ -90,6 +91,7 @@ cont format
     border:0.15rem solid rgb(180,180,180);
     position:relative;
     background-color:#fff;
+    height:100%;
 }
 button{
     font-size:4rem;
@@ -112,6 +114,7 @@ button{
     text-align: center;
     margin:3vw 10%;
     width:80%;
+    height:80%;
 }
 .right-arrow{
     position:absolute;
