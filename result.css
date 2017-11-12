@@ -5,12 +5,57 @@
 html{
     font-size:62.5%;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 37.5%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 25%;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 37.5%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 25%;
+    }
+}
+@media (max-width: 200px) {
+    html {
+        font-size: 12.5%;
+    }
+}
 /**
 header format
  */
 header{
     width:100%;
-    height:10rem;
+    height: 13vw;
     position: fixed;
     top:0;
     background-color:rgb(52,190,222);
@@ -25,11 +70,22 @@ button{
     margin:auto;
     color:white;
 }
+.homepage{
+    background:url("images/home-btn.png") center center no-repeat;
+    background-size:100%;
+}
+.to-res{
+    background:url("images/to-res.png") center center no-repeat;
+    background-size:100%;
+}
 .fat{
-    margin:auto 3rem;
+    margin:auto 3vw;
+    width:5vw;
+    height:5vw;
 }
 .homepage,.to-res{
-    background-color: rgb(52,190,222);
+    width:100%;
+    height:100%;
 }
 .t{
     position: absolute;
@@ -45,7 +101,7 @@ footer format
 footer{
     position: fixed;
     bottom:0;
-    height:10rem;
+    height:13vw;
     width:100%;
     background-color: rgba(52,190,222,0.5);
     display:flex;
@@ -57,14 +113,14 @@ footer{
     width:100%;
     height:100%;
     font-size:5rem;
-    border-radius: 2rem;
+    border-radius: 2vw;
 }
 .share>button{
     background-color: rgb(248,180,69);
     width:100%;
     height:100%;
     font-size:5rem;
-    border-radius: 2rem;
+    border-radius: 2vw;
 }
 .play-again,.share{
     width:40%;
@@ -76,14 +132,18 @@ main format
  */
 main{
     width:100%;
-    padding:10rem 0;
+    padding:13vw 0 ;
     font-size:3rem;
 }
 /**
  top-info part
  */
 .victory{
-    margin:5rem auto;
+    margin:5vw auto;
+    background: url("images/result-btn.png") center center no-repeat;
+    background-size:100%;
+    height:30vw;
+    width:45vw;
 }
 .top-info{
     background-color: rgb(52,190,222);
@@ -98,11 +158,11 @@ main{
 .declare{
     font-size: 3.5rem;
     color:rgb(248,180,69);
-    margin-bottom:3rem;
+    margin-bottom:3vw;
 }
 .res{
     color:white;
-    margin:3rem auto;
+    margin:3vw auto;
     font-size:2.5rem;
 }
 /**
@@ -115,8 +175,8 @@ days-info part
     flex-direction: column;
 }
 .daily{
-    padding:2rem 10%;
-    border-bottom:0.2rem solid rgb(139,139,139);
+    padding:2vw 10%;
+    border-bottom:0.2vw solid rgb(139,139,139);
 }
 .evt,.time{
     color:rgb(139,139,139);
@@ -131,5 +191,5 @@ days-info part
 }
 .evt{
     font-size:2.5rem;
-    margin:0.5rem 0 0 0;
+    margin:0.5vw 0 0 0;
 }

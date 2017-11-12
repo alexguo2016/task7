@@ -5,6 +5,31 @@
 html{
     font-size:62.5%;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 37.5%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 25%;
+    }
+}
+@media (max-width: 200px) {
+    html {
+        font-size: 12.5%;
+    }
+}
 body{
     background-color:rgb(52,190,222);
 }
@@ -15,7 +40,7 @@ header{
     position:fixed;
     top:0;
     width:100%;
-    height:10rem;
+    height:11vw;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -26,23 +51,38 @@ button{
     outline: none;
     border: none;
 }
-.more2,.clo{
-    background-color:rgb(52,190,222);
+.more2{
+    background:url("images/more2-btn.png") center center no-repeat;
+    background-size:80%;
+    width:100%;
+    height:100%;
+}
+.clo{
+    background:url("images/close-btn.png") center center no-repeat;
+    background-size:80%;
+    width:100%;
+    height:100%;
 }
 .fat{
-    margin:3rem 2rem;
+    margin:3vw 2vw;
+    width:5vw;
+    height:5vw;
+
 }
 .title{
     color:white;
     font-size:3rem;
     transform: translateY(30%);
+
 }
 /**
 main format
  */
 main{
-    padding-top:10rem;
-    padding-bottom:14rem;
+    padding-top:11vw;
+    padding-bottom:15vw;
+    width:100%;
+    height:100%;
 }
 /**
 headline format
@@ -62,8 +102,11 @@ headline format
     margin:auto;
 }
 .play{
-    background-color:rgb(186,233,244);
-    margin:2rem;
+    background:url("images/vedio-btn.png") center center no-repeat;
+    background-size:80%;
+    width:8vw;
+    height:8vw;
+    margin:2vw;
 }
 .little-triangle{
     position:relative;
@@ -73,7 +116,7 @@ headline format
     left:10%;
 }
 .tips{
-    margin:5% 0 5% 10%;
+    margin:5vw 0 5vw 10vw;
     color:white;
     font-size:3rem;
 }
@@ -87,8 +130,8 @@ footer{
     width:100%;
     background-color: rgb(52,190,222);
     text-align: center;
+    height:10vw;
     z-index:9999;
-    height:10rem;
     display:flex;
     justify-content: center;
 }
@@ -111,17 +154,21 @@ players format
 .players{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+}
+.combine{
+    width:30vw;
+    height:30vw;
+    margin:3vw auto;
 }
 .player{
-    width:14rem;
-    height:14rem;
+    width:24vw;
+    height:24vw;
     background-color:white;
-    margin:3rem;
     text-align: center;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin:auto;
 }
 .character{
     width:90%;
@@ -172,32 +219,32 @@ players format
 }
 
 .bid{
-    width:14rem;
-    margin:-2.5rem 3rem;
+    width:24vw;
+    margin:3vw 3vw;
     display:none;
     justify-content: space-between;
     position:absolute;
 }
 .bid>button{
     margin:0;
-    width:30px;
-    height:30px;
+    width:5vw;
+    height:5vw;
 }
 .inner-bid1{
-    background:url("images/img.png") center center no-repeat;
-    background-position:0 -105px;
+    background:url("images/kill-btn.png") center center no-repeat;
+    background-size:100%;
 }
 .inner-bid2{
-    background:url("images/img.png") center center no-repeat;
-    background-position:0 -159px;
+    background:url("images/research-btn.png") center center no-repeat;
+    background-size:100%;
 }
 .inner-bid3{
-    background:url("images/img.png") center center no-repeat;
-    background-position:0 -52px;
+    background:url("images/target-btn.png") center center no-repeat;
+    background-size:100%;
 }
 .inner-bid4{
-    background:url("images/img.png") center center no-repeat;
-    background-position:0 0;
+    background:url("images/save-btn.png") center center no-repeat;
+    background-size:100%;
 }
 
 .combine:hover>.bid{

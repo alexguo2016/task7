@@ -5,6 +5,31 @@
 html{
     font-size:62.5%;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 37.5%;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 25%;
+    }
+}
+@media (max-width: 200px) {
+    html {
+        font-size: 12.5%;
+    }
+}
 body{
     background:rgb(239,239,239);
     height:100%;
@@ -18,16 +43,18 @@ header{
     background-color: rgb(52,190,222);
     position:fixed;
     top: 0;
-    height:6rem;
+    height:10vw;
     z-index:9999;
 }
 .more1{
-    width:4rem;
-    height:4rem;
-    background-color: rgb(52,190,222);
+    width:6vw;
+    height:6vw;
+    /*background-color: rgb(52,190,222);*/
+    background:url("images/more-btn.png") center center no-repeat;
+    background-size:100%;
     outline:none;
     border:none;
-    margin:1rem;
+    margin:2vw;
     padding:0;
 }
 
@@ -35,7 +62,7 @@ header{
 cont format
  */
 .cont{
-    padding: 6rem 0 0 3rem;
+    padding: 10vw 0 0 6vw;
     bottom:0;
 }
 .head{
@@ -54,6 +81,8 @@ cont format
     right:3%;
     top:50%;
     transform: translateY(-50%);
+    width:3vw;
+    height:8vw;
 }
 .game-sel{
     border:0.15rem solid rgb(180,180,180);
@@ -73,19 +102,27 @@ button{
     font-size:4.5rem;
     text-align: center;
     color:rgb(249,197,112);
-    padding:2rem 0;
+    padding:4vw 0;
     border-bottom:0.1rem solid rgb(249,197,112);
 }
 .cols{
     font-size:3.5rem;
     text-align: center;
-    margin:3rem 10%;
+    margin:3vw 10%;
     width:80%;
 }
 .right-arrow{
     position:absolute;
-    top:45%;
+    top:42%;
     right:3%;
+    width:6vw;
+    height:12vw;
+}
+.rig-btn{
+    background:url("images/next-btn.png") center center no-repeat;
+    background-size:70%;
+    width:100%;
+    height:100%;
 }
 p{
     display:inline-block;
@@ -98,11 +135,11 @@ p{
 下面4个点
  */
 .dot1,.dot2,.dot3,.dot4{
-    width:2rem;
-    height:2rem;
+    width:2vw;
+    height:2vw;
     background-color: rgb(180,180,180);
     border-radius: 50%;
-    margin:0 1rem;
+    margin:0 1vw;
 }
 .dot1{
     background-color:rgb(52,190,222);
@@ -110,7 +147,7 @@ p{
 .dots{
     display:flex;
     justify-content: center;
-    margin:2rem 0;
+    margin:2vw 0;
 }
 
 
