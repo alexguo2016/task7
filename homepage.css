@@ -83,6 +83,8 @@ cont format
     transform: translateY(-50%);
     width:3vw;
     height:8vw;
+    max-width:30px;
+    max-height:80px;
 }
 .game-sel{
     border:0.15rem solid rgb(180,180,180);
