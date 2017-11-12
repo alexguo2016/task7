@@ -62,9 +62,9 @@ header{
 cont format
  */
 .cont{
-    padding: 10vw 0 0 6vw;
+    padding: 10vw 3vw 6vw;
     bottom:0;
-
+    height:100vh;
 }
 .head{
     height:auto;
@@ -91,7 +91,7 @@ cont format
     border:0.15rem solid rgb(180,180,180);
     position:relative;
     background-color:#fff;
-    height:100%;
+    
 }
 button{
     font-size:4rem;
@@ -153,6 +153,7 @@ p{
     display:flex;
     justify-content: center;
     margin:2vw 0;
+
 }
 
 
