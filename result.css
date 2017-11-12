@@ -185,6 +185,7 @@ days-info part
     position:absolute;
     right:10%;
     font-size:2rem;
+    transform:translateY(50%);
 }
 .day{
     font-size: 3.5rem;

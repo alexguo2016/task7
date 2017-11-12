@@ -59,12 +59,12 @@ header{
 }
 
 /**
-cont format
+main format
  */
-.cont{
-    padding: 10vw 3vw 6vw;
+main{
+    padding: 10vw 3vw 0;
     bottom:0;
-    height:100vh;
+    height:100%;
 }
 .head{
     height:auto;
@@ -124,7 +124,7 @@ a{
 }
 .right-arrow{
     position:absolute;
-    top:42%;
+    top:46.5%;
     right:3%;
     width:6vw;
     height:12vw;
@@ -158,8 +158,7 @@ p{
 .dots{
     display:flex;
     justify-content: center;
-    margin:2vw 0;
-
+    
 }
 
 
