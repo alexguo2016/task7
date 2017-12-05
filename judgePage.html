@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,
+width=device-width height=device-height">
+    <title>法官页面</title>
+    <link rel="stylesheet" type="text/css" href="judgePage.css"></link>
+    <!-- <link rel="stylesheet" href="homepage.css"> -->
+    <script src="judgePage.js"></script>
+</head>
+	<body onload="getData()">
+		<!-- <h1>JudgePage</h1> -->
+		<div class="headtitle">
+			<span>杀人游戏简化版</span>
+			<button class="btn-larger">重新开始</button>
+		</div>
+		<div class="myContent nav-part">
+			<div  class="select-detail" onclick="showSetting()">游戏设置</div>
+			<div  class="select-detail" onclick="showId()">玩家身份</div>
+			<div  class="select-detail" onclick="showDaily()">法官日记</div>
+		</div>
+		<div class="myContent gameSetting-part">
+			<div class="tot-players">
+				<div class="tips-head">总人数</div>
+				<div class="msg-show">
+					<span>人数</span>
+					<span class="setting-num">3</span>
+				</div>
+			</div>
+			<div class="tot-players">
+				<div class="tips-head">杀手</div>
+				<div class="msg-show">
+					<span>角色</span>
+					<span class="setting-num">1</span>
+				</div>
+			</div>
+			<div class="tot-players">
+				<div class="tips-head">水民</div>
+				<div class="msg-show">
+					<span>角色</span>
+					<span class="setting-num">2</span>
+				</div>
+			</div>
+		</div>
+		<div class="myContent idShowing-part">
+			<div class="title">
+				<div>编号</div>
+				<div>角色</div>
+			</div>
+			<div id="test"></div>
+			<!-- <table style="width:96vw;height:4vw" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<th>编号</th>
+					<th>角色</th>
+				</tr>
+				<tr>
+					<td id="firstRow">1</td>
+					<td>水民</td>
+				</tr>
+			</table> -->
+		</div>
+		<div class="myContent daily-part">
+			<textarea class="judgeDaily">第一天xxxxxx</textarea>
+		</div>
+	</body>
+</html>

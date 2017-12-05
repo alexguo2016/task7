@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,
+width=device-width height=device-height">
+    <title>人数选择</title>
+    <link rel="stylesheet" type="text/css" href="newSettingPage.css"></link>
+    <!-- <link rel="stylesheet" href="homepage.css"> -->
+    <script src="newSettingPage.js"></script>
+</head>
+<body>
+	<!-- <h1>这个是人数选择页面</h1>
+	<input type="text"  id="myInput"/>
+	<button onclick="show()">click me</button> -->
+	<div class="headtitle">
+		<span>杀人游戏简化版</span>
+		<button>介绍</button>
+	</div>
+	<div class="describe">最纯粹的推理</div>
+	<div class="tot-players">
+		<div class="tips-head">总人数</div>
+		<div class="msg-input">
+			<span>人数</span>
+			<input class="num-input" type="text" 
+			onkeydown="return noNumbers(event)"
+			placeholder="请输入总玩家数量，6-18之间" />
+		</div>
+	</div>
+	<div class="tot-players">
+		<div class="tips-head">杀手</div>
+		<div class="msg-input">
+			<span>人数</span>
+			<input class="num-input" type="text" 
+			onkeydown="return noNumbers(event)"
+			placeholder="请输入杀手数量" />
+		</div>
+	</div>
+	<div class="tot-players">
+		<div class="tips-head">水民</div>
+		<div class="msg-input">
+			<span>人数</span>
+			<input class="num-input" type="text" 
+			onkeydown="return noNumbers(event)"
+			placeholder="请输入水民数量" />
+		</div>
+	</div>
+	<!-- <div class="killers">
+		<div class="tips-head">杀手</div>
+		<div>
+			<span>人数</span>
+			<input type="text" placeholder="请输入杀手数量" />
+		</div>
+	</div>
+	<div class="citizens">
+		<div class="tips-head">水民</div>
+		<div>
+			<span>人数</span>
+			<input type="text" placeholder="请输入水民数量" />
+		</div>
+	</div> -->
+	<div class="myBtns">
+		<a href="index.html">
+			<button class="goback">返回列表</button>
+		</a>
+		<button class="playgame" onclick="showNum()">开始游戏</button>
+	</div>
+	
+
+
+</body>
+</html>

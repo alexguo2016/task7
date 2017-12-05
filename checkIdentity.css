@@ -1,0 +1,103 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: white;
+}
+
+.headtitle{
+	/*width:100%;*/
+	/*margin:auto;*/
+	display:flex;
+	justify-content:space-between;
+	padding: 1vw 2vw;
+
+}
+.headtitle>span{
+	
+	font-size: 5vw;
+	font-weight: bold;
+}
+/*.headtitle>button{
+	/*width:15vw;*/
+	/*font-size: 2vw;
+	background-color: rgb(120,20,10);
+}*/
+.describe{
+	padding: 0 2vw;
+	font-size: 2vw;
+}
+button{
+	padding:1vw;
+	color:white;
+	border-radius: 10px;
+	outline: none;
+	font-size: 2vw;
+	background-color: rgb(120,20,10);
+	/*border:none;*/
+}
+
+.myContent{
+	margin:2vw;
+	padding-top:2vw;
+	border-top:1px solid grey;
+	/*border-bottom:1px solid grey;*/
+
+}
+
+.step-list{
+	display:flex;
+}
+.step-list>div{
+	width:30%;
+}
+
+.shownPart{
+	background-color: rgb(20,100,180);
+	border-radius: 2px;
+	border:1px solid rgb(20,100,180);
+}
+.shownPart-title{
+	font-size: 2.5vw;	
+	padding:1vw 2vw;
+	color:white;
+}
+.shownPart-msg{
+	padding:1vw 2vw;
+	background-color:white;
+}
+.shownPart-msg>div{
+	display:flex;
+	margin-top:1vw;
+	font-size: 2.5vw;
+}
+.shownPart-msg>div>span{
+	width:50%;
+	border:1px solid rgb(220,220,220);
+	padding:1vw;
+}
+.shownPart-footer{
+	font-size: 2.5vw;
+	padding:1vw 2vw;
+	background-color:rgb(220,220,220);
+}
+.btn-grey{
+	background-color: rgb(220,220,220);
+}
+.btn-green{
+	background-color:rgb(50,180,50);
+}
+.btn-orange{
+	background-color:rgb(250,180,50);
+}
+.btn-larger{
+	font-size: 3vw;
+	font-weight: bold;
+}
+.playerRole{
+	color:red;
+}
+.show-and-hidden{
+	display:none;
+}

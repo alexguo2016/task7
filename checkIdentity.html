@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,
+width=device-width height=device-height">
+    <title>身份查看</title>
+    <link rel="stylesheet" type="text/css" href="checkIdentity.css"></link>
+    <!-- <link rel="stylesheet" href="homepage.css"> -->
+    <script src="checkIdentity.js"></script>
+</head>
+	<body onload="getData()">
+		<div class="headtitle">
+			<span>杀人游戏简化版</span>
+			<button class="btn-larger">结束游戏</button>
+		</div>
+		<div class="describe">总人数<span class="getData">8</span>（【杀手：<span class="getData">1</span>】 【水民：<span class="getData">7</span>】）</div>
+		<div class="step-list myContent">
+			
+			<div id="toBeHide">
+				<button class="stepList btn-grey">开始</button>
+			</div>
+			<div>
+				<button class="stepList btn-green ">1</button>
+			</div>
+			<div>
+				<button class="stepList">2</button>
+			</div>
+		</div>
+		<div class="myContent">
+			<button class="btn-orange btn-larger" onclick="showPlayer()">查看身份</button>
+		</div>
+		<div class="myContent show-and-hidden">
+			<div class="shownPart">
+				<div class="shownPart-title"><span class="serialNum">1</span>号玩家的身份信息</div>
+				<div class="shownPart-msg">
+					<div>
+						<span>角色</span>
+						<span class="playerRole"></span>
+					</div>
+					<div class="playerTips">
+						角色提示:通过逻辑分析抓出隐藏的杀手
+					</div>
+				</div>
+				<div class="shownPart-footer">
+					*请用自己的手机拍照，以记住身份信息.点击擦掉身份，以免泄露
+				</div>
+			</div>
+		</div>
+		<div class="myContent">
+			<button class="btn-green btn-larger" id="linkToJudge" onclick="hidePlayer()">擦掉身份</button>
+		</div>
+
+	</body>
+</html>
