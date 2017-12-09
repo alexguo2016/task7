@@ -11,6 +11,8 @@ width=device-width height=device-height">
 
     <link rel="stylesheet" href="simpleSetting.css" type="text/css" />
     <link rel="stylesheet" href="scss/mainFormat.css" type="text/css" />
+    <script src="inspectionProfiles/jquery.min.js"></script> 
+    <script type="text/javascript" src="simpleSetting.js"></script>
 </head>
 <body>
     <header>
@@ -19,13 +21,13 @@ width=device-width height=device-height">
             <button class="prev">
             </button>
         </a>
-        <p class="t">
+        <!--<p class="t">
             参数设置
         </p>
         <a href="#" class="fat">
             <button class="to-res">
             </button>
-        </a>
+        </a>-->
 
     </header>
 
@@ -34,24 +36,24 @@ width=device-width height=device-height">
         <div class="player-info row">
         	<div class="playerRole killer">
         		<img src="images/killer.png" />
-        		杀手<span>4</span>人
+        		杀手<span class="killerPlayers">3</span>人
         	</div>
         	<div class="playerRole citizen">
         		<img src="images/citizen.png" />
-        		平民<span>8</span>人
+        		平民<span class="citizenPlayers">9</span>人
         	</div>
         	
         </div>
         <div class="input-part">
         	请输入玩家数量
-        	<span>12</span>
+        	<span><input class="tot-players" type="text" size="1" maxlength="2" value="12"/></span>
         	<span class="sub-tips">玩家数量为4-18</span>
         </div>
     </main>
 
     <footer>
         
-        <a href="#" class="deal">
+        <a href="simpleCheck.html" class="deal">
             <button  value="deal">
 
                 去发牌
