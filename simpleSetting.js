@@ -43,5 +43,28 @@ $(document).ready(function(){
 		sessionStorage.setItem("killer",$(".killerPlayers").text());
 		sessionStorage.setItem("citizen",$(".citizenPlayers").text());
 	});
-	
+	$(".deal").click(function(){
+		var total = parseInt(sessionStorage.getItem("total"));
+		var killer = parseInt(sessionStorage.getItem("killer"));
+		var citizen = parseInt(sessionStorage.getItem("citizen"));
+		var playerArr = [];
+		//console.log(playerArr);
+		for(var i=0;i<killer;i++){
+			playerArr.push("杀手");
+		}
+		for(var i=0;i<citizen;i++){
+			playerArr.push("平民");
+		}
+		console.log(playerArr);
+		console.log("aaa");
+		var _playerArr=playerArr.concat();
+		for(var i=_playerArr.length;i--;){
+			var j=Math.floor(Math.random()*(i+1));
+			var temp=_playerArr[i];
+			_playerArr[i]=_playerArr[j];
+			_playerArr[j]=temp;
+		}
+		console.log(_playerArr);
+		sessionStorage.setItem("playerArr",_playerArr);
+	});
 });

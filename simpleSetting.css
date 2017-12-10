@@ -74,6 +74,10 @@ button{
     background:url("images/prev.png") center center no-repeat;
     background-size:100%;
 }
+.myClose{
+    background:url("images/close-btn.png") center center no-repeat;
+    background-size:100%;
+}
 .to-res{
     background:url("images/to-res.png") center center no-repeat;
     background-size:100%;
@@ -83,7 +87,7 @@ button{
     width:5vw;
     height:5vw;
 }
-.prev,.to-res{
+.prev,.to-res,.myClose{
     width:100%;
     height:100%;
 }
@@ -117,6 +121,18 @@ footer{
     border-radius: 2vw;
 }
 .deal{
+    width:95%;
+    height:70%;
+    margin:auto;
+}
+.myCheck>button{
+    background-color: rgb(248,180,69);
+    width:100%;
+    height:100%;
+    font-size:5rem;
+    border-radius: 2vw;
+}
+.myCheck{
     width:95%;
     height:70%;
     margin:auto;
