@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>sjp</title>
-	</head>
-	<body>
-		this is simple judge page
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,
+width=device-width height=device-height">
+    <title>法官日记</title>
+    <!--<link rel="stylesheet" href="inspectionProfiles/bootstrap.min.css">-->
+    <script src="inspectionProfiles/jquery.min.js"></script>
+    <!--<script src="inspectionProfiles/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="simpleJudgePage.css">
+    <script src="simpleJudgePage.js"></script>
+</head>
+<body>
+    <header>
+        <!--header with more2btn closebtn-->
+        <a href="simpleCheck.html" class="fat">
+            <button class="prev" value="prev">
+            </button>
+        </a>
+        <div class="title">
+            法官日记
+        </div>
+        <a href="#" class="fat">
+            <button class="clo" value="clo">
+            </button>
+        </a>
+
+    </header>
+    <main>
+        <!--a headline ,a tips and players-boxes with hover-->
+        <!--<div class="headline">
+
+            <p class="disguess">
+                发言讨论结束，大家请投票
+            </p>
+            <button id="play" class="play" onclick="play();"></button>
+            </button>
+            <audio src="NO.9.mp3" controls="controls" preload id="music" hidden>
+                您的浏览器不支持audio标签
+            </audio>
+            <script>   
+               function play(){
+                 var audio = document.getElementById('music'); 
+                 if(audio.paused){                 
+                     audio.play();//audio.play();// 播放  
+                 }
+                 else{
+                      audio.pause();// 暂停
+                 } 
+               }
+            </script>
+        </div>
+        <div class="little-triangle">
+            <img class="lt" src="images/little-triangle.png"/>
+        </div>
+        <div class="tips">
+            点击得票数最多人的头像
+        </div>-->
+        <div class="players">
+            <!--3 boxes in a line-->
+            <div class="combine">
+                <div class="player">
+                    <div class="character">
+                        <div class="inner-case playerRole">水民</div>
+                    </div>
+                    <div class="num">
+                        <div class="inner-case playerNum">1号</div>
+                    </div>
+                </div>
+                <div class="bid">
+                    <button class="inner-bid1">
+                    </button>
+                    <button class="inner-bid2">
+                    </button>
+                    <button class="inner-bid3">
+                    </button>
+                    <button class="inner-bid4">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <!--vote button center,half visible-->
+        <div class="fat-vote">
+            <a href="#" >
+                <button class="vote">开始游戏</button>
+            </a>
+        </div>
+    </footer>
+</body>
 </html>
