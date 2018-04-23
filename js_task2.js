@@ -1,23 +1,23 @@
 $(document).ready(function(){
-	// $(".tot-players").keydown(function(e){
-	// 	var keynum
-	// 	var keychar
-	// 	var numcheck
-    //
-	// 	if(window.event) // IE
-	// 	  {
-	// 	  keynum = e.keyCode
-	// 	  }
-	// 	else if(e.which) // Netscape/Firefox/Opera
-	// 	  {
-	// 	  keynum = e.which
-	// 	  }
-    //
-	// 	keychar = String.fromCharCode(keynum)
-	// 	numcheck = /\d/
-    //
-	// 	return numcheck.test(keychar)
-	// });
+	$(".tot-players").keydown(function(e){
+		var keynum
+		var keychar
+		var numcheck
+
+		if(window.event) // IE
+		  {
+		  keynum = e.keyCode
+		  }
+		else if(e.which) // Netscape/Firefox/Opera
+		  {
+		  keynum = e.which
+		  }
+
+		keychar = String.fromCharCode(keynum)
+		numcheck = /\d/
+
+		return numcheck.test(keychar)
+	});
 	$(".tot-players").mouseleave(function(){
 		console.log("aaa");
 		var totalPlayers=parseInt($(".tot-players").val());
